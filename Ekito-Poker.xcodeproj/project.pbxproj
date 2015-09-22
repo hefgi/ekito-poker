@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402B9EB3B673F2FD72A887E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA91C53060B648CCA1DCAB /* libPods.a */; };
 		940B3F7E1BB168A6007D5EB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 940B3F7D1BB168A6007D5EB5 /* main.m */; };
 		940B3F811BB168A6007D5EB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 940B3F801BB168A6007D5EB5 /* AppDelegate.m */; };
 		940B3F841BB168A6007D5EB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940B3F831BB168A6007D5EB5 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22A4AF69F76B2565F70968B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		84FA91C53060B648CCA1DCAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B3F791BB168A6007D5EB5 /* Ekito-Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ekito-Poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B3F7D1BB168A6007D5EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		940B3F7F1BB168A6007D5EB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		940B3F881BB168A6007D5EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B3F8B1BB168A6007D5EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940B3F8D1BB168A6007D5EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E5800E975901E23F42C48B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402B9EB3B673F2FD72A887E1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D1BAF234EE50A0B0DF0078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84FA91C53060B648CCA1DCAB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		940B3F701BB168A6007D5EB5 = {
 			isa = PBXGroup;
 			children = (
 				940B3F7B1BB168A6007D5EB5 /* Ekito-Poker */,
 				940B3F7A1BB168A6007D5EB5 /* Products */,
+				F4605BB465A38246202CD676 /* Pods */,
+				04D1BAF234EE50A0B0DF0078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4605BB465A38246202CD676 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22A4AF69F76B2565F70968B0 /* Pods.debug.xcconfig */,
+				C1E5800E975901E23F42C48B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940B3F901BB168A6007D5EB5 /* Build configuration list for PBXNativeTarget "Ekito-Poker" */;
 			buildPhases = (
+				C6E2BDC3291778BC167A7B9B /* Check Pods Manifest.lock */,
 				940B3F751BB168A6007D5EB5 /* Sources */,
 				940B3F761BB168A6007D5EB5 /* Frameworks */,
 				940B3F771BB168A6007D5EB5 /* Resources */,
+				37066366E988FFEEA3BF6FEB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +169,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37066366E988FFEEA3BF6FEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E2BDC3291778BC167A7B9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		940B3F751BB168A6007D5EB5 /* Sources */ = {
@@ -261,6 +320,7 @@
 		};
 		940B3F911BB168A6007D5EB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A4AF69F76B2565F70968B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Ekito-Poker/Info.plist";
@@ -272,6 +332,7 @@
 		};
 		940B3F921BB168A6007D5EB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E5800E975901E23F42C48B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Ekito-Poker/Info.plist";
@@ -300,6 +361,7 @@
 				940B3F921BB168A6007D5EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
